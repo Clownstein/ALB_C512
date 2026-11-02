@@ -1,0 +1,21 @@
+{
+  "name": "albpkg",
+  "version": "1.0.0",
+  "description": "Signed post-quantum file packages (ML-KEM-768 / ML-DSA-65 / HKDF-SHA-256 / AES-256-GCM)",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "bin": {
+    "albpkg": "src/cli.ts"
+  },
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "node --test tests/",
+    "cli": "node src/cli.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "SEE LICENSE IN ../../LICENSE"
+}

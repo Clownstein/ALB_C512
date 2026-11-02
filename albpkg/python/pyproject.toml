@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "albpkg"
+version = "1.0.0"
+description = "Signed post-quantum file packages (ML-KEM-768 / ML-DSA-65 / HKDF-SHA-256 / AES-256-GCM)"
+readme = "../README.md"
+requires-python = ">=3.10"
+license = { file = "../../LICENSE" }
+# Pinned to a tested range.  ML-KEM and ML-DSA arrived in cryptography 46;
+# widening this range requires re-running the acceptance suite.
+dependencies = ["cryptography>=46,<51"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+albpkg = "albpkg.cli:main"
+
+[tool.setuptools]
+packages = ["albpkg"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

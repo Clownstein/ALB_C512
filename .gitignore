@@ -1,0 +1,17 @@
+test_key.secret
+test_plain.bin
+test_meta.json
+test_encrypted.c512
+*.exe
+__pycache__/
+*.pyc
+target/
+.cache
+# albpkg build output
+# NOTE: do not write this as `albpkg/go/albpkg` -- that pattern also matches the
+# Go package DIRECTORY of the same name and silently excludes the whole port.
+# Built binaries go in albpkg/go/bin/ precisely so the pattern is unambiguous.
+albpkg/go/bin/
+albpkg/*/.cache/
+albpkg/typescript/node_modules/
+dist/

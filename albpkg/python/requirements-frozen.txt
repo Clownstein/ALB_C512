@@ -1,0 +1,14 @@
+# Exact versions the ALBPKG/1 Python acceptance suite was run against
+# (Windows 11, CPython 3.13, 91/91 passing).  Bumping any line requires a full
+# re-run of albpkg/python/tests before release.
+cffi==2.1.1
+cryptography==50.0.1
+pycparser==3.0
+
+# test-only
+colorama==0.4.6
+iniconfig==2.3.0
+packaging==26.3
+pluggy==1.6.0
+Pygments==2.21.0
+pytest==9.1.1

@@ -1,0 +1,8 @@
+[package]
+name = "c512"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "c512"
+path = "c512.rs"

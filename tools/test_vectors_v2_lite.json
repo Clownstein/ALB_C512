@@ -1,0 +1,85 @@
+{
+  "version": "2.0-lite",
+  "vectors": [
+    {
+      "name": "lite_empty",
+      "key": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "nonce": "000102030405060708090a0b0c0d0e0f",
+      "aad": "",
+      "plaintext": "",
+      "ciphertext_tag": "5887ed23dc52659416797bac59ae431b"
+    },
+    {
+      "name": "lite_32B_pt_32B_aad",
+      "key": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "nonce": "000102030405060708090a0b0c0d0e0f",
+      "aad": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "plaintext": "5555555555555555555555555555555555555555555555555555555555555555",
+      "ciphertext_tag": "0301f5bdfcd917ecfb546e5b197d6034d3ae71505d794cf73846f4f06298a8750e8adeb93f5c89289c50e9f5a044e2b5"
+    },
+    {
+      "name": "lite_15B_pt",
+      "key": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "nonce": "000102030405060708090a0b0c0d0e0f",
+      "aad": "",
+      "plaintext": "48656c6c6f20433531324c69746521",
+      "ciphertext_tag": "e2e99348cbbf531205180203f24ca5bdbab3c7912bc9dcab9964bbb576a6f4"
+    },
+    {
+      "name": "lite_single_byte",
+      "key": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "nonce": "000102030405060708090a0b0c0d0e0f",
+      "aad": "",
+      "plaintext": "ff",
+      "ciphertext_tag": "5519a852d90b3a92a9cb33a9e97f4075fb"
+    },
+    {
+      "name": "lite_two_blocks",
+      "key": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "nonce": "000102030405060708090a0b0c0d0e0f",
+      "aad": "dddddddddddddddddddddddddddddddd",
+      "plaintext": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "ciphertext_tag": "84483df2204690800eb7b13f45334ea2669a152b5518eaa0247e8a7060742a065b678a76b92ccd77bd850448ed6f4fa4bd97d61b43b32c043420460b698db7203eefe322f7450b29bbb3432c2d794431"
+    },
+    {
+      "name": "lite_zero_key",
+      "key": "0000000000000000000000000000000000000000000000000000000000000000",
+      "nonce": "000102030405060708090a0b0c0d0e0f",
+      "aad": "1111111111111111",
+      "plaintext": "22222222222222222222222222222222",
+      "ciphertext_tag": "a791a68146ff7a26c178d4a062c3d11c0f62aa70435e531553d8e0090beef232"
+    },
+    {
+      "name": "lite_boundary_33B",
+      "key": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "nonce": "000102030405060708090a0b0c0d0e0f",
+      "aad": "",
+      "plaintext": "777777777777777777777777777777777777777777777777777777777777777777",
+      "ciphertext_tag": "ddfb8853d3e86750435d391df15ef3afe0b9658213c812254c6fd95557318ef2bf4c7670dbbb142f24291a25bc450ca55f"
+    },
+    {
+      "name": "lite_large_aad",
+      "key": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "nonce": "000102030405060708090a0b0c0d0e0f",
+      "aad": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "plaintext": "42424242",
+      "ciphertext_tag": "ad867c196209b3018407d3baf4bcef0742a503fb"
+    },
+    {
+      "name": "lite_1B_pt",
+      "key": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "nonce": "000102030405060708090a0b0c0d0e0f",
+      "aad": "",
+      "plaintext": "01",
+      "ciphertext_tag": "aba307e1155150bfa1ab2fea87194c8ebb"
+    },
+    {
+      "name": "lite_31B_pt",
+      "key": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "nonce": "000102030405060708090a0b0c0d0e0f",
+      "aad": "",
+      "plaintext": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e",
+      "ciphertext_tag": "aa8dfd27a09a16203c2344618a248ad787df00e670aa73452301b4393c5be7ce06da2994a57c8b64301cc4e613a97c"
+    }
+  ]
+}
